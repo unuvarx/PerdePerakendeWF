@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="PerdePerakendeDBModel1.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Satis">
+    <Key>
+      <PropertyRef Name="SATISID" />
+    </Key>
+    <Property Name="SATISID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="MÜŞTERİID" Type="int" Nullable="false" />
+    <Property Name="MÜŞTERİ" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="MİKTAR" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="EN" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="BOY" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="M2" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FİYAT" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="PerdePerakendeDBModel1StoreContainer">
+    <EntitySet Name="Satis" EntityType="Self.Satis" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

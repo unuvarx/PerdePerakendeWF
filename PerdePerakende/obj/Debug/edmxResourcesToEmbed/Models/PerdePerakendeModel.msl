@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PerdePerakendeDBModelStoreContainer" CdmEntityContainer="PerdePerakendeDBEntities">
+    <EntitySetMapping Name="Musteriler">
+      <EntityTypeMapping TypeName="PerdePerakendeDBModel.Musteriler">
+        <MappingFragment StoreEntitySet="Musteriler">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="AdSoyad" ColumnName="AdSoyad" />
+          <ScalarProperty Name="Tel" ColumnName="Tel" />
+          <ScalarProperty Name="EMail" ColumnName="EMail" />
+          <ScalarProperty Name="Adress" ColumnName="Adress" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Perdeler">
+      <EntityTypeMapping TypeName="PerdePerakendeDBModel.Perdeler">
+        <MappingFragment StoreEntitySet="Perdeler">
+          <ScalarProperty Name="PerdeID" ColumnName="PerdeID" />
+          <ScalarProperty Name="PerdeAdı" ColumnName="PerdeAdı" />
+          <ScalarProperty Name="M2" ColumnName="M2" />
+          <ScalarProperty Name="Fiyat" ColumnName="Fiyat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Satis">
+      <EntityTypeMapping TypeName="PerdePerakendeDBModel.Satis">
+        <MappingFragment StoreEntitySet="Satis">
+          <ScalarProperty Name="SATISID" ColumnName="SATISID" />
+          <ScalarProperty Name="MÜŞTERİID" ColumnName="MÜŞTERİID" />
+          <ScalarProperty Name="MÜŞTERİ" ColumnName="MÜŞTERİ" />
+          <ScalarProperty Name="MİKTAR" ColumnName="MİKTAR" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+          <ScalarProperty Name="BOY" ColumnName="BOY" />
+          <ScalarProperty Name="M2" ColumnName="M2" />
+          <ScalarProperty Name="FİYAT" ColumnName="FİYAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

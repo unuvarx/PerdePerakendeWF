@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PerdePerakendeDBModel1StoreContainer" CdmEntityContainer="PerdePerakendeDBEntities3">
+    <EntitySetMapping Name="Satis">
+      <EntityTypeMapping TypeName="PerdePerakendeDBModel1.Satis">
+        <MappingFragment StoreEntitySet="Satis">
+          <ScalarProperty Name="SATISID" ColumnName="SATISID" />
+          <ScalarProperty Name="MÜŞTERİID" ColumnName="MÜŞTERİID" />
+          <ScalarProperty Name="MÜŞTERİ" ColumnName="MÜŞTERİ" />
+          <ScalarProperty Name="MİKTAR" ColumnName="MİKTAR" />
+          <ScalarProperty Name="EN" ColumnName="EN" />
+          <ScalarProperty Name="BOY" ColumnName="BOY" />
+          <ScalarProperty Name="M2" ColumnName="M2" />
+          <ScalarProperty Name="FİYAT" ColumnName="FİYAT" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

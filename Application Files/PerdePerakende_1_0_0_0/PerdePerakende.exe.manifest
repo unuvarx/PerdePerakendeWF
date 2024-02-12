@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="PerdePerakende.exe" version="1.0.0.0" publicKeyToken="11217df5c8db92a2" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="PerdePerakende" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="PerdePerakende.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="5225168">
+      <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>nCD7KthqdgsMauvZMByQCYkdAq4UcgqTkmwLU1uK0Js=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.SqlServer.dll" size="622288">
+      <assemblyIdentity name="EntityFramework.SqlServer" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>4OEmw7inupUB0D+Z1Upcu9F0vOy2FwCYq0zBIZ8n+TM=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="PerdePerakende.exe" size="35728">
+      <assemblyIdentity name="PerdePerakende" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/AGaBtVE4bcdiS1kXtNhxCZ7w++ASdcdzb0n8S3PTxs=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Models\PerdePerakendeModel.Context.tt" size="22943">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+u0qjGDTRHfGXYQu0l7KDh2pVZ+5sjB4hAU4eWtj/VM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Models\PerdePerakendeModel.tt" size="25288">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4iKLMp4JJOA4pOzbA7714533lSnQj1ZyLr7q+CX/mL4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="PerdePerakende.exe.config" size="1524">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QmxJGTzfJEoMbD5km+o3vrChYhNNgc+2CfXsFOoEXSg=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MSI\Sefa" issuerKeyHash="ec6912eb2c3634ca50064c7beb496087fd32c432" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>3totoWselFS+oqwwqXmqW58Th3LWllFJGkiUVIjF8uY=</DigestValue></Reference></SignedInfo><SignatureValue>rlFH5ELPzCXdace9ZCZ+MwlIyH09tb4wsJH9ufMR9v2Lh+WQnNvwWsg2e+7wsFvuRQe7R2ajkhYizkeo7S0Qvd9A9MzHcgWjRede5ARickvekvm84ZLiMfddG9CmeABv5dhA7+hIokPlLF0kP0xOem4aI8ftuVkqd2f4zzXCooU=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wkVDpz/0Q6LXKYAO7LYiMfy5QrWlfNqVaM1wTm4Hv4tdHhNe5f1ySoGMxe6EHOQa/YnegxO3TjCI50QBO3UhgbRemsL5mz2ieFvLk3AYLJiCNuINewVtzqpKAVB/Nf7Pk/t5yIu/3EaJdsr5YZJyHzvWRklfd15DX4arBg0D5hk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="e6f2c5885494481a495196d67287139f5baa79a930aca2be54941e6ba12ddade" Description="" Url=""><as:assemblyIdentity name="PerdePerakende.exe" version="1.0.0.0" publicKeyToken="11217df5c8db92a2" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MSI\Sefa</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>96UbOkB7JUxhRmjGVUTq5LwJ5fFBUZyKLDvhQ/hRpzI=</DigestValue></Reference></SignedInfo><SignatureValue>t4PI06v9LwkyEaNEXiTbgp0maL+7xqyiYNgfaqmeinbmVKU4OK5a4F8Solfi0+8yuDYI29XRS4Ps5y2U+35HS0QxNFev0qbFWSW85BMiVtSAbaP0zboBuGt+p2I2LqRk1Dj9p5VhjolGCL9GJ3vt2+lp4gxdxeK9cELhnIzLC20=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wkVDpz/0Q6LXKYAO7LYiMfy5QrWlfNqVaM1wTm4Hv4tdHhNe5f1ySoGMxe6EHOQa/YnegxO3TjCI50QBO3UhgbRemsL5mz2ieFvLk3AYLJiCNuINewVtzqpKAVB/Nf7Pk/t5yIu/3EaJdsr5YZJyHzvWRklfd15DX4arBg0D5hk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBuTCCASKgAwIBAgIQTOTa9b9saJpEe+D+l5fdkDANBgkqhkiG9w0BAQsFADAbMRkwFwYDVQQDHhAATQBTAEkAXABTAGUAZgBhMB4XDTI0MDIxMjE0MDczOVoXDTI1MDIxMTIwMDczOVowGzEZMBcGA1UEAx4QAE0AUwBJAFwAUwBlAGYAYTCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAwkVDpz/0Q6LXKYAO7LYiMfy5QrWlfNqVaM1wTm4Hv4tdHhNe5f1ySoGMxe6EHOQa/YnegxO3TjCI50QBO3UhgbRemsL5mz2ieFvLk3AYLJiCNuINewVtzqpKAVB/Nf7Pk/t5yIu/3EaJdsr5YZJyHzvWRklfd15DX4arBg0D5hkCAwEAATANBgkqhkiG9w0BAQsFAAOBgQArIs6YQAEdkmPR3rsdhWIsXA8LK39Bwwx6YUovcV6aujqP/NLXlJlB17A2+URdMkNTCA4sq9895AsX3822WtdZJsUgEYaZroPZH1988bSLpFYktTZtD0KQCXWvJ78/BAUyg/aBIhDc3rSbwGJVaN9swJAIU1UzrBBoFpH+fB+H5A==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
