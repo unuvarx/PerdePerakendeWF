@@ -5,10 +5,7 @@ VisualStudioVersion = 17.8.34525.116
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerdePerakende", "PerdePerakende.csproj", "{EA8D1205-535F-4481-B494-EEC03648DF9F}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26B6BA34-F198-43EF-AADD-AA86FC599E0C}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-	EndProjectSection
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "PerdePerakendeSetUp", "..\PerdePerakendeSetUp\PerdePerakendeSetUp.vdproj", "{68D3DFCA-25A7-4581-BDD4-FA2FC7E3531B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +17,8 @@ Global
 		{EA8D1205-535F-4481-B494-EEC03648DF9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EA8D1205-535F-4481-B494-EEC03648DF9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EA8D1205-535F-4481-B494-EEC03648DF9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{68D3DFCA-25A7-4581-BDD4-FA2FC7E3531B}.Debug|Any CPU.ActiveCfg = Debug
+		{68D3DFCA-25A7-4581-BDD4-FA2FC7E3531B}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

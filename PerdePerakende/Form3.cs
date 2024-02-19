@@ -1,8 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.Sql;
+using System.Data;
 using System.Linq;
 using System.Windows.Forms;
 using PerdePerakende.Models;
+using System.Data.SqlClient;
 
 namespace PerdePerakende
 {
@@ -16,24 +20,34 @@ namespace PerdePerakende
 
         }
 
+
+
         public void refresh()
         {
-            List<Musteriler> musteriList = db.Musteriler.ToList();
-            comboBoxMusteriler.DataSource = musteriList;
-            comboBoxMusteriler.DisplayMember = "AdSoyad";
-            comboBoxMusteriler.ValueMember = "ID";
+            try
+            {
+                List<Musteriler> musteriList = db.Musteriler.ToList();
+                comboBoxMusteriler.DataSource = musteriList;
+                comboBoxMusteriler.DisplayMember = "AdSoyad";
+                comboBoxMusteriler.ValueMember = "ID";
 
-            List<Perdeler> perdeList = db.Perdeler.ToList();
-            comboBoxPerdeler.DataSource = perdeList;
-            comboBoxPerdeler.DisplayMember = "PerdeAdı";
-            comboBoxPerdeler.ValueMember = "PerdeID";
-
-            dataGridViewMusteriler.DataSource = db.Musteriler.ToList();
-            dataGridViewSelling.DataSource = db.Satis.ToList();
+                List<Perdeler> perdeList = db.Perdeler.ToList();
+                comboBoxPerdeler.DataSource = perdeList;
+                comboBoxPerdeler.DisplayMember = "PerdeAdı";
+                comboBoxPerdeler.ValueMember = "PerdeID";
+                
+                dataGridViewMusteriler.DataSource = db.Musteriler.ToList();
+                dataGridViewSelling.DataSource = db.Satis.ToList();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Hata: " + ex.Message);
+            }
         }
         private void Selling_Load(object sender, EventArgs e)
         {
             refresh();
+
         }
         public void RefreshData()
         {
@@ -127,10 +141,25 @@ namespace PerdePerakende
 
         }
 
+
+
+
+
+
         private void btnAddProductPage_Click(object sender, EventArgs e)
         {
             AddProductPage addProductPage = new AddProductPage();
             addProductPage.ShowDialog();
+        }
+
+        private void comboBoxMusteriler_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

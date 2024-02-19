@@ -53,6 +53,7 @@
             this.comboBoxMusteriler.Name = "comboBoxMusteriler";
             this.comboBoxMusteriler.Size = new System.Drawing.Size(120, 21);
             this.comboBoxMusteriler.TabIndex = 0;
+            this.comboBoxMusteriler.SelectedIndexChanged += new System.EventHandler(this.comboBoxMusteriler_SelectedIndexChanged);
             // 
             // Müşteri
             // 
